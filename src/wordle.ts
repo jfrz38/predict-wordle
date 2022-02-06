@@ -18,24 +18,23 @@ interface IExistingLetter {
     badPosition: number[]
 }
 
+const language = 'spanish'
+const usedLetters = ''
+const nLetters = 5
+
 const existingLetters: IExistingLetter[] = []
 
 const existing = existingLetters.map(m => m.letter)
+
 const nonExistingWords = Array.from(
-    new Set("".toLocaleLowerCase().split("")
+    new Set(usedLetters.toLocaleLowerCase().split("")
     .filter(f => !existing.includes(f))))
 
-const language = 'spanish'
-let file = readFileSync(path.resolve(__dirname, `./dictionaries/${language}.txt`), 'utf-8');
+let words = getWordsList(language, nLetters).filter(f => 
+    !(/\d/.test(f)) && 
+        nonExistingWords.every(item => f.indexOf(item) == -1) &&
+            existingLetters.map(m => m.letter).every(e => f.indexOf(e) !== -1))
 
-let words = file.split("\n")
-words = words.filter(f => 
-    f.length === 5 && 
-        !(/\d/.test(f)) && 
-            /^[a-z]+$/.test(f) &&
-                nonExistingWords.every(item => f.indexOf(item) == -1) &&
-                    existingLetters.map(m => m.letter).every(e => f.indexOf(e) !== -1))
-                    
 words = Array.from(new Set(words))
 existingLetters.forEach(el => {
     words = words.filter(f => {
@@ -51,4 +50,7 @@ existingLetters.forEach(el => {
 console.log(`Hay ${words.length} palabra/s`)
 console.log(words.join(', '))
 
+function getWordsList(language: string, nLetters: number): string[] {
+    return readFileSync(path.resolve(__dirname, `./dictionaries/${nLetters}letters/words/${language}.txt`), 'utf-8').split("\n");
+}
 
