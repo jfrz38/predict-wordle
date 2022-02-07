@@ -16,6 +16,7 @@ interface IExistingLetter {
     letter: string,
     goodPosition: number[],
     badPosition: number[],
+    noExists: number[]
 }
 
 const language = ''
@@ -26,10 +27,10 @@ const existingLetters: IExistingLetter[] = []
 
 const words: string[] = getMatchedWords()
 
-const wordsSorted: IWordStats[] = sortWordsByHeight(language, nLetters, words)
+const wordsSorted: string[] = sortWordsByHeight(language, nLetters, words)
 
 console.log(`Hay ${wordsSorted.length} palabra/s`)
-console.log(wordsSorted.map(w => w.word).join(', '))
+console.log(wordsSorted.join(', '))
 
 function getWordsList(language: string, nLetters: number): string[] {
     return readFileSync(path.resolve(__dirname, `./dictionaries/${nLetters}letters/words/${language}.txt`), 'utf-8').split("\n");
@@ -43,9 +44,8 @@ function getMatchedWords(): string[]{
         .filter(f => !existing.includes(f))))
 
     let words = getWordsList(language, nLetters).filter(f => 
-        !(/\d/.test(f)) && 
-            nonExistingWords.every(item => f.indexOf(item) == -1) &&
-                existingLetters.map(m => m.letter).every(e => f.indexOf(e) !== -1))
+        nonExistingWords.every(item => f.indexOf(item) == -1) &&
+            existingLetters.map(m => m.letter).every(e => f.indexOf(e) !== -1))
     
     words = Array.from(new Set(words))
     existingLetters.forEach(el => {
@@ -54,14 +54,15 @@ function getMatchedWords(): string[]{
                 .map(function (c, i) { if (c == el.letter) return i; })
                 .filter(function (v) { return v >= 0; })
             return !el.badPosition.some(s => indexes.includes(s)) &&
-                    el.goodPosition.every(e => indexes.includes(e))
+                    el.goodPosition.every(e => indexes.includes(e)) &&
+                    !el.noExists.some(s => indexes.includes(s))
             
         })
     })
     return words
 }
 
-function sortWordsByHeight(language: string, nLetters: number, words:string[]): IWordStats[]{
+function sortWordsByHeight(language: string, nLetters: number, words:string[]): string[]{
     const stats: ILetterStats = getStats(language, nLetters)
     const wordsSorted: IWordStats[] = []
     words.forEach(word => {
@@ -74,7 +75,7 @@ function sortWordsByHeight(language: string, nLetters: number, words:string[]): 
             weight: totalWeight
         })
     })
-    return wordsSorted.sort((a,b) => b.weight - a.weight)
+    return wordsSorted.sort((a,b) => b.weight - a.weight).map(w => w.word)
 }
 
 function getStats(language: string, nLetters: number): ILetterStats {
