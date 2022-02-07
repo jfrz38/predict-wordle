@@ -1,12 +1,8 @@
 import { readFileSync, writeFileSync } from 'fs';
 const path = require("path");
+import { ILetterStats } from '../IStats'
 
-interface ILetterStats{
-    letter:string,
-    total:number,
-    weight:number
-}
-const language = 'spanish'
+const language = 'turkish'
 const nLetters = 5
 const original_file = `./original/${language}.txt`
 const save_words_file = `./${nLetters}letters/words/${language}.txt`
@@ -73,6 +69,19 @@ function createStatsFile(): void{
             dictionary[letter] = dictionary[letter] === undefined ? 1 : dictionary[letter]+1
         })
     })
-    saveFile(save_stats_file, JSON.stringify(dictionary, null, 2))
+    
+    const totalLetters = Object.keys(dictionary).reduce(function (previousValue, currentLetter) {
+        return previousValue + dictionary[currentLetter]
+    }, 0)
+
+    const stats: ILetterStats = {}
+    Object.keys(dictionary).forEach(letter => {
+        const totalCurrentLetter = dictionary[letter]
+        stats[letter] = {
+            total: dictionary[letter],
+            weight: totalCurrentLetter/totalLetters
+        }
+    })
+    saveFile(save_stats_file, JSON.stringify(stats, null, 2))
 }
 
