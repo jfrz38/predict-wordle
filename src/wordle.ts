@@ -18,7 +18,7 @@ interface IExistingLetter {
     badPosition: number[],
 }
 
-const language = 'spanish'
+const language = ''
 const usedLetters = ''
 const nLetters = 5
 

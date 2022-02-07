@@ -70,6 +70,7 @@ aeres
 aerez
 affin
 affut
+agaça
 agace
 agace
 agami
@@ -108,9 +109,12 @@ aides
 aides
 aidez
 aient
+aieul
+aieux
 aigle
 aigre
 aigri
+aigue
 aigus
 ailee
 ailes
@@ -130,6 +134,7 @@ ainee
 aines
 aines
 ainsi
+aioli
 airai
 airas
 airat
@@ -214,6 +219,8 @@ amour
 amphi
 ample
 ampli
+amuie
+amuis
 amura
 amure
 amure
@@ -277,6 +284,7 @@ arase
 arase
 arbre
 arche
+arçon
 ardue
 ardus
 arecs
@@ -540,6 +548,7 @@ bedon
 beent
 beera
 begue
+begue
 begum
 beiez
 beige
@@ -569,6 +578,7 @@ beons
 bequa
 beque
 beque
+berça
 berce
 berce
 beret
@@ -690,6 +700,7 @@ bobos
 bocal
 boche
 bocks
+boete
 boeuf
 bogie
 bogue
@@ -916,6 +927,8 @@ cagne
 cagne
 cagot
 cahot
+caids
+caieu
 cairn
 cajou
 cajun
@@ -961,6 +974,7 @@ canin
 canna
 canne
 canne
+canoe
 canon
 canot
 canut
@@ -1138,6 +1152,7 @@ cible
 cidre
 ciels
 cieux
+cigue
 cilie
 cilla
 cille
@@ -1236,7 +1251,11 @@ cogne
 cohue
 coing
 coins
+coita
 coite
+coite
+coite
+coits
 colin
 colis
 colla
@@ -1252,6 +1271,7 @@ comma
 comme
 comte
 comte
+conçu
 conde
 cones
 conga
@@ -1513,6 +1533,10 @@ decis
 decor
 decri
 decru
+deçue
+deçus
+deçut
+deçut
 dedia
 dedie
 dedie
@@ -1613,6 +1637,7 @@ divan
 divas
 divin
 divis
+djain
 djinn
 docks
 docte
@@ -1942,6 +1967,7 @@ ephod
 epiai
 epias
 epiat
+epiça
 epice
 epice
 epiee
@@ -1961,6 +1987,7 @@ epite
 epode
 epoux
 epris
+epuça
 epuce
 epuce
 epura
@@ -2074,6 +2101,7 @@ facha
 fache
 fache
 facho
+façon
 facto
 fadai
 fadas
@@ -2318,6 +2346,7 @@ folie
 folio
 folks
 folle
+fonça
 fonce
 fonce
 fonda
@@ -2330,6 +2359,7 @@ foots
 forai
 foras
 forat
+força
 force
 force
 forci
@@ -2473,6 +2503,7 @@ gagez
 gagna
 gagne
 gagne
+gaiac
 gaies
 gaina
 gaine
@@ -2592,6 +2623,7 @@ gerat
 gerba
 gerbe
 gerbe
+gerça
 gerce
 gerce
 geree
@@ -2633,6 +2665,7 @@ giton
 givra
 givre
 givre
+glaça
 glace
 glace
 glana
@@ -2803,7 +2836,11 @@ hache
 hache
 hadji
 haies
+haies
+haiks
+haiku
 haine
+haira
 haire
 halai
 halai
@@ -3034,6 +3071,7 @@ infus
 inlay
 innee
 innes
+inoui
 input
 inter
 intis
@@ -3090,6 +3128,8 @@ jacta
 jacte
 jades
 jadis
+jaina
+jains
 jalap
 jales
 jalon
@@ -3150,6 +3190,7 @@ joint
 joker
 jolie
 jolis
+jonça
 jonce
 jonce
 joncs
@@ -3264,6 +3305,9 @@ kyste
 label
 labie
 labre
+laçai
+laças
+laçat
 lacee
 lacer
 laces
@@ -3278,6 +3322,7 @@ lacte
 ladin
 ladre
 lagon
+laics
 laide
 laids
 laies
@@ -3287,6 +3332,7 @@ laine
 laird
 laite
 laits
+laius
 laize
 lamai
 lamas
@@ -3300,6 +3346,7 @@ lamie
 lampa
 lampe
 lampe
+lança
 lance
 lance
 lande
@@ -3361,6 +3408,7 @@ lebel
 lecha
 leche
 leche
+leçon
 ledit
 legal
 legat
@@ -3649,6 +3697,7 @@ macis
 macla
 macle
 macle
+maçon
 macon
 macre
 madre
@@ -3660,6 +3709,7 @@ magna
 magne
 magne
 magot
+maias
 maies
 mails
 mains
@@ -3778,9 +3828,11 @@ megis
 megit
 megit
 megot
+meiji
 melai
 melas
 melat
+melba
 melee
 meler
 meles
@@ -3923,6 +3975,7 @@ moira
 moire
 moire
 moisa
+moise
 moise
 moise
 moisi
@@ -4076,8 +4129,10 @@ nager
 nages
 nages
 nagez
+naifs
 naine
 nains
+naive
 najas
 nanan
 nanar
@@ -4159,6 +4214,7 @@ nixes
 noble
 noces
 nocif
+noels
 noeud
 noies
 noire
@@ -4330,6 +4386,7 @@ orgue
 oriel
 orins
 orles
+orlon
 ormes
 ornai
 ornas
@@ -4376,6 +4433,8 @@ oubli
 ouche
 oueds
 ouest
+ouies
+ouira
 ourdi
 ourla
 ourle
@@ -4421,6 +4480,7 @@ pagez
 pagne
 pagre
 pagus
+paien
 paies
 pains
 paire
@@ -4615,8 +4675,10 @@ pepie
 pepie
 pepin
 pepon
+perça
 perce
 perce
+perçu
 perde
 perds
 perdu
@@ -4719,6 +4781,7 @@ pille
 pilon
 pilou
 pilum
+pinça
 pince
 pince
 pinne
@@ -4755,6 +4818,7 @@ pitre
 pives
 pivot
 pizza
+plaça
 place
 place
 plage
@@ -4800,6 +4864,7 @@ poche
 poela
 poele
 poele
+poele
 poeme
 poete
 pogne
@@ -4832,6 +4897,7 @@ pomme
 pompa
 pompe
 pompe
+ponça
 ponce
 ponce
 ponde
@@ -5026,6 +5092,7 @@ ragot
 ragua
 rague
 rague
+raias
 raide
 raidi
 raids
@@ -5137,7 +5204,11 @@ recru
 recru
 recta
 recto
+reçue
 recul
+reçus
+reçut
+reçut
 redan
 redie
 redis
@@ -5276,6 +5347,7 @@ rimes
 rimes
 rimes
 rimez
+rinça
 rince
 rince
 rings
@@ -5354,6 +5426,7 @@ ronde
 rondi
 rondo
 ronds
+roneo
 ronge
 ronge
 roqua
@@ -5476,10 +5549,12 @@ sages
 sagou
 sagum
 sahel
+saiga
 saine
 sains
 saint
 saisi
+saite
 sajou
 sakes
 sakis
@@ -5539,6 +5614,7 @@ sasse
 sasse
 satin
 satis
+sauça
 sauce
 sauce
 sauge
@@ -5700,6 +5776,7 @@ situe
 situe
 siums
 sixte
+skais
 skate
 skiai
 skias
@@ -5844,11 +5921,15 @@ subir
 subis
 subit
 subit
+suçai
+suças
+suçat
 sucee
 sucer
 suces
 suces
 sucez
+suçon
 sucra
 sucre
 sucre
@@ -5922,6 +6003,7 @@ tacts
 tafia
 tagal
 taies
+taiga
 tains
 taira
 taire
@@ -5943,6 +6025,7 @@ talus
 tamia
 tamil
 tamis
+tança
 tance
 tance
 tango
@@ -6049,6 +6132,7 @@ tenue
 tenue
 tenus
 tenus
+terça
 terce
 terce
 terme
@@ -6082,6 +6166,7 @@ tetue
 tetus
 texan
 texte
+thaie
 theme
 these
 theta
@@ -6223,6 +6308,7 @@ tours
 toute
 touts
 trabe
+traça
 trace
 trace
 tracs
@@ -6428,6 +6514,7 @@ vecue
 vecus
 vecut
 vecut
+vedas
 veina
 veine
 veine
@@ -6482,6 +6569,7 @@ verts
 vertu
 verve
 vesce
+vespa
 vessa
 vesse
 vesse
@@ -6703,6 +6791,7 @@ zippe
 zippe
 zizis
 zloty
+zoile
 zombi
 zonai
 zonal
