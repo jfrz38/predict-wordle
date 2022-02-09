@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<head>
+  <!-- ../back/dist/bundle.js -->
+  <!-- <script type="module" src="./index.js"></script> -->
+  <script src="./components/board/board.js"></script>
+  <script src="./components/keyboard/keyboard.js"></script>
+  <script src="../back/lib/main.js"></script>
+  <!--
+    <script src="../back/lib/main.js"></script>
+<script>
+  window.onload = function () {
+    PredictWordle.prueba();
+  };
+</script>
+--></head>
+<body>
+  <div class="container">
+    <board-wc nletters="5"></board-wc>
+    <keyboard-wc lang="english" id="keyboard"></keyboard-wc>
+  </div>
+  <button id="send">send</button>
+  <button id="changeLetters"></button>
+  <div>
+    <p id="result-title"></p>
+    <textarea id="existing-words" readonly="true"> </textarea>
+  </div>
+
+  <script src="./index.js"></script>
+  <script>
+    window.onload = function () {
+      document.getElementById("send").addEventListener("click", () => {
+        const boardData = this.createData();
+        if (!boardData) {
+          alert("Ha ocurrido un error al cargar las letras");
+        }
+        if (boardData.usedLetters < 5) {
+          alert("Por favor completa al menos una fila");
+          return;
+        }
+        PredictWordle.getWords(
+          "spanish",
+          5,
+          boardData.usedLetters,
+          boardData.existingLetters
+        ).then((words) => {
+          this.updateTextArea(words);
+        });
+      });
+    };
+  </script>
+</body>
