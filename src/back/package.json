@@ -1,0 +1,21 @@
+{
+  "name": "predict-wordle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node wordle.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ts-node": "^10.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.22",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.5",
+    "webpack-cli": "^4.9.2"
+  }
+}
