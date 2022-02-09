@@ -2,8 +2,8 @@
 import {getWords} from './wordle'
 import { IExistingLetter } from './IExistingLetter'
 
-const language = 'spanish'
-const usedLetters = 'tapeoatrassatancisne'
+const language = ''
+const usedLetters = ''
 const nLetters = 5
 
 const existingLetters: IExistingLetter[] = [
